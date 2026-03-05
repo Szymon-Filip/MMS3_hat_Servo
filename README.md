@@ -1,5 +1,16 @@
 # Zestaw template'ów kompatybilnych z płytką MMS3 i systemem ChainBus
 
+### Tworzenie własnego hata
+<p> Żeby stworzyć własnego hata musisz zrobić fork'a tego repo i na nim zaimplementować to co potrzebujesz
+<p> 0. Zobacz na fork'i czy ktoś już nie zrobił płytki której potrzebujesz, jeśli nie to
+<p>1. Wejdź na github'a template'a i kliknij "fork"
+
+![punkt 1](readme_zdjecia/fork.png)
+<p>2. Zmień nazwe i zrób fork'a
+<p>3. Sklonuj repo swojego właśnie zrobionego forka
+<p>4. Usuń niepotrzebne pliki z template'a (zdjęcia), zaktualizuj readme, zmień nazwy plików .kicad z MMS_hat_templates na zgodną z twoim projektem i zmień nazwy w tabelce w prawym dolnym rogu
+<p>5. Gotowe, możesz push'ować nowe commity do swojego fork'a
+
 ### Łączenie hat'ów
 <p> Na jednym MMS3 można zamontować do 8 hatów. Łączy się przez wpinianie kolejnego Hat'a do złącza ChainBus wcześniejszego
 
@@ -36,7 +47,7 @@
 <p> Po środku płytki na górze jest złącze Chainbus. Na od front'u  jest żeńskie, na Back'u jest męskie.
 <p> Na dolnej krawędzi płytki powinny być umieszczone złącza wyjścia/wejścia. Na lewej złacza XT60 jeśli ich używasz, a na prawej wszystkie elementy konfiguracyjne i debugowe (potencjometry, przyciski, LED'y).
 
-![Zdjęcie Płytki z narysowanymi złączami](Zdjecie_Zlacza.png)
+![Zdjęcie Płytki z narysowanymi złączami](./readme_zdjecia/Zdjecie_Zlacza.png)
 
 
 <p> Domyślnie jako złącz używamy JST-XH 2.5mm. Producent mówi że obsługują do 3A
