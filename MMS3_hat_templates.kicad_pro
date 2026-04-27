@@ -588,7 +588,14 @@
       "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "/Power Connector/VIN_BRD": [
+        "50V "
+      ],
+      "BRD_VIN": [
+        "50V "
+      ]
+    },
     "netclass_patterns": [
       {
         "netclass": "USB_90_DIFF",
@@ -1062,7 +1069,7 @@
         "uuid": "6596548a-44e0-46d8-8624-fd71cf4a3e17"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR41,#PWR46,#PWR54-57,#PWR60,R23-34",
     "variants": []
   },
   "sheets": [
@@ -1079,7 +1086,7 @@
       "Bus_switch"
     ],
     [
-      "f11c3b61-ae6a-4858-9d37-bbf426f44fb0",
+      "99cf0a47-7576-4da2-b5b4-2714d9e150a8",
       "Power Connector"
     ],
     [
@@ -1089,10 +1096,6 @@
     [
       "e548e2bd-91b7-4192-abed-9a3697e5c1b6",
       "Servo controller"
-    ],
-    [
-      "c6fe6645-c1eb-4317-9e6f-134a73c9fa05",
-      "Buck Regulator"
     ]
   ],
   "text_variables": {

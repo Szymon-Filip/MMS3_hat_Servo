@@ -452,7 +452,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VCC"
+		(symbol "power:PWR_FLAG"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -466,8 +466,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -477,8 +477,8 @@
 					)
 				)
 			)
-			(property "Value" "VCC"
-				(at 0 3.556 0)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -509,7 +509,7 @@
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(property "Description" "Special symbol for telling ERC where power comes from"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -520,7 +520,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "global power"
+			(property "ki_keywords" "flag power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -531,46 +531,8 @@
 					)
 				)
 			)
-			(symbol "VCC_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VCC_1_1"
-				(pin power_in line
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
 					(at 0 0 90)
 					(length 0)
 					(name ""
@@ -589,213 +551,262 @@
 					)
 				)
 			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
 			(embedded_fonts no)
 		)
 	)
-	(text "If you remove this, \nadd direct connection betwen Vin and BRD_VIN"
-		(exclude_from_sim no)
-		(at 142.748 127 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 255 10 0 1)
-			)
-		)
-		(uuid "9bc41689-3990-41db-a116-8b280f8b0166")
-	)
 	(junction
-		(at 152.4 86.36)
+		(at 135.89 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "35a0aa31-3770-4050-9ec4-46be2cc29d9c")
+		(uuid "0ae85398-33f6-4dbd-b1a1-56a548fe062b")
 	)
 	(junction
 		(at 152.4 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7acc3c6f-7431-4cb7-86e2-feced733a79b")
+		(uuid "1b09ffb6-e251-4716-a54a-2d00a15c1051")
 	)
 	(junction
-		(at 157.48 86.36)
+		(at 128.27 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "fbc14732-6bee-4282-ab64-9bb42b267752")
+		(uuid "28f83f41-39aa-4c48-b642-d20ee40f4451")
+	)
+	(junction
+		(at 128.27 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "97cfc0d7-f250-4fa6-9f05-5d9fb2382705")
 	)
 	(wire
 		(pts
-			(xy 157.48 101.6) (xy 152.4 101.6)
+			(xy 128.27 116.84) (xy 128.27 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "04dcd363-b170-43ba-ba81-db6675332917")
+		(uuid "106e9d13-00b2-4a8c-b627-afaf8595ec05")
 	)
 	(wire
 		(pts
-			(xy 125.73 101.6) (xy 152.4 101.6)
+			(xy 101.6 116.84) (xy 128.27 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "08f3c8c0-99a3-40d6-92da-d5d60515665d")
+		(uuid "3e575b22-131f-4935-903a-817b473091bf")
 	)
 	(wire
 		(pts
-			(xy 152.4 97.79) (xy 146.05 97.79)
+			(xy 152.4 100.33) (xy 152.4 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "188be83d-47ab-4478-b7b2-8913de7022f0")
+		(uuid "42c99371-358e-4a30-bb17-c31ed57d534a")
 	)
 	(wire
 		(pts
-			(xy 152.4 95.25) (xy 152.4 86.36)
+			(xy 101.6 110.49) (xy 96.52 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "22196674-a70b-4b0b-9baf-8cae58c1c514")
+		(uuid "4fe81e8d-a920-4c55-8b91-015f869f1e2c")
 	)
 	(wire
 		(pts
-			(xy 125.73 97.79) (xy 120.65 97.79)
+			(xy 133.35 116.84) (xy 128.27 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2bba548c-91eb-4996-ab96-e47e5f525fd6")
+		(uuid "78b03a76-fd8e-4731-9d11-14cb04a93163")
 	)
 	(wire
 		(pts
-			(xy 157.48 86.36) (xy 163.83 86.36)
+			(xy 133.35 116.84) (xy 133.35 120.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "338b162d-b127-47eb-8123-b3e5e6d7cb46")
+		(uuid "9a6f8cd5-910c-4855-b1e2-a6604ef6be5f")
 	)
 	(wire
 		(pts
-			(xy 152.4 86.36) (xy 157.48 86.36)
+			(xy 135.89 97.79) (xy 135.89 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3992cf6a-f28c-4756-9af4-814af968059e")
+		(uuid "a30ac5b1-9157-410a-b6a6-7fba789b97b2")
 	)
 	(wire
 		(pts
-			(xy 125.73 101.6) (xy 125.73 97.79)
+			(xy 128.27 110.49) (xy 128.27 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6ce26d0b-df39-45da-9aa9-643875ce2101")
+		(uuid "a90c742f-e27f-4356-9e61-095722924460")
 	)
 	(wire
 		(pts
-			(xy 125.73 95.25) (xy 120.65 95.25)
+			(xy 101.6 101.6) (xy 128.27 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6e508d23-53a5-4338-bcc2-b00b47d4992b")
+		(uuid "acb42ebe-e76a-4881-a253-bcb46ba27de6")
 	)
 	(wire
 		(pts
-			(xy 157.48 82.55) (xy 157.48 86.36)
+			(xy 101.6 113.03) (xy 96.52 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7b06c706-7be8-4649-8deb-b4778c8ef223")
+		(uuid "acea7a03-982d-4aa2-b396-14e204be7c31")
 	)
 	(wire
 		(pts
-			(xy 146.05 95.25) (xy 152.4 95.25)
+			(xy 101.6 101.6) (xy 101.6 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "890cc9b6-84a2-4348-9121-aff42c2e2f76")
+		(uuid "b89863de-8ab5-4ebc-9611-6de7b13e0236")
 	)
 	(wire
 		(pts
-			(xy 157.48 101.6) (xy 157.48 105.41)
+			(xy 121.92 110.49) (xy 128.27 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8ffaeaf7-7c51-4fd7-a89d-1ad16cc1e4fb")
+		(uuid "bfe270de-fac3-423d-b13a-0870c134fd1f")
 	)
 	(wire
 		(pts
-			(xy 173.99 86.36) (xy 180.34 86.36)
+			(xy 149.86 101.6) (xy 152.4 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "95a8c77e-8d62-4217-8fc6-62c65136504b")
+		(uuid "c94cb903-8b0d-4d1b-8f44-5d13a99774b4")
 	)
 	(wire
 		(pts
-			(xy 125.73 86.36) (xy 152.4 86.36)
+			(xy 128.27 113.03) (xy 121.92 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9d36d95e-8b26-464f-a40a-45005633a94a")
+		(uuid "d4afd692-b413-4fd4-9f9d-feecf629ac90")
 	)
 	(wire
 		(pts
-			(xy 152.4 101.6) (xy 152.4 97.79)
+			(xy 101.6 116.84) (xy 101.6 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b09390ea-8681-4269-ab6b-249fb6fdb258")
+		(uuid "d7374d97-e7f2-4532-be00-93ae175f5d42")
 	)
 	(wire
 		(pts
-			(xy 125.73 86.36) (xy 125.73 95.25)
+			(xy 135.89 101.6) (xy 139.7 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fa6da35b-e498-4a67-8716-bce39eed1ba1")
+		(uuid "e2ca97e0-801a-45b3-ada6-d2ab0f9c38c4")
+	)
+	(wire
+		(pts
+			(xy 128.27 101.6) (xy 135.89 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eadcdf06-5703-423d-a5db-a41e9c24942f")
+	)
+	(wire
+		(pts
+			(xy 152.4 101.6) (xy 156.21 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f533ba29-5c6e-465a-a895-3bb87329c66c")
+	)
+	(hierarchical_label "VIN_BRD"
+		(shape input)
+		(at 135.89 97.79 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "24686d9b-07cf-4d78-a05f-8322ebe6e0fe")
+	)
+	(hierarchical_label "VIN_Chainbus"
+		(shape input)
+		(at 156.21 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bbb96770-128b-4a8a-aa94-b3dd3b0c0e62")
 	)
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 152.4 86.36 0)
+		(at 128.27 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "f2b4e0fb-1834-42c9-aa70-43fdfbacf699")
-		(property "Klasy sieci" "50V "
-			(at 150.876 82.042 0)
+		(uuid "62577e61-8c3e-4f40-ba9f-abd83def7da0")
+		(property "Net Class" "50V "
+			(at 126.746 97.282 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -806,7 +817,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at -24.13 -30.48 0)
+			(at -48.26 -15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -817,367 +828,44 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 115.57 97.79 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0ff6488c-dd9e-444f-afe8-242c0dfa59ef")
-		(property "Reference" "J4"
-			(at 115.57 88.9 0)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 152.4 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fa1616e2-45cd-48eb-b86c-a54574c92987")
+		(property "Net Class" "50V "
+			(at 150.876 96.012 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "AMASS XT60 Male"
-			(at 115.57 91.44 0)
+		(property "Component Class" ""
+			(at -24.13 -16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(italic yes)
 				)
-			)
-		)
-		(property "Footprint" "XT60:AMASS_XT60PW-M_1x02_P7.20mm_Horizontal"
-			(at 115.57 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 115.57 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 115.57 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C98732"
-			(at 115.57 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 115.57 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4f9e86f0-f5a3-42bc-a546-1752b980d17c")
-		)
-		(pin "2"
-			(uuid "8c580749-1775-418b-a707-daafb66c09cf")
-		)
-		(instances
-			(project "MMS3_hat_templates"
-				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/f11c3b61-ae6a-4858-9d37-bbf426f44fb0"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 180.34 86.36 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2fe0878f-0a1a-4ca0-a3be-a432f630b775")
-		(property "Reference" "#PWR041"
-			(at 176.53 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BRD_VIN"
-			(at 187.198 86.36 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 180.34 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 180.34 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "395bbc6a-742d-424a-bf39-85f3d5ccd64d")
-		)
-		(instances
-			(project "MMS3_hat_templates"
-				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/f11c3b61-ae6a-4858-9d37-bbf426f44fb0"
-					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 140.97 97.79 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3b4bf1a3-9299-4a0f-a632-011cd216f9dc")
-		(property "Reference" "J5"
-			(at 140.97 88.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AMASS XT60 Female"
-			(at 140.97 91.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "XT60:AMASS_XT60PW-F_1x02_P7.20mm_Horizontal"
-			(at 140.97 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 140.97 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 140.97 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C428722"
-			(at 140.97 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 140.97 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1f0a0aa9-06c9-473b-a50e-daac96659fe6")
-		)
-		(pin "2"
-			(uuid "9a1911cf-0106-4559-990e-6625deef32c2")
-		)
-		(instances
-			(project "MMS3_hat_templates"
-				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/f11c3b61-ae6a-4858-9d37-bbf426f44fb0"
-					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 157.48 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "482f3d78-37dc-49ed-95b2-aacea4eb394d")
-		(property "Reference" "#PWR039"
-			(at 157.48 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Vin"
-			(at 157.48 78.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 157.48 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 157.48 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 157.48 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8b1361c4-b645-43a2-8ec0-0b8f0372543c")
-		)
-		(instances
-			(project "MMS3_hat_templates"
-				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/f11c3b61-ae6a-4858-9d37-bbf426f44fb0"
-					(reference "#PWR039")
-					(unit 1)
-				)
+				(justify right)
 			)
 		)
 	)
 	(symbol
 		(lib_id "SS510C:SS510C")
-		(at 168.91 86.36 180)
+		(at 144.78 101.6 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1186,9 +874,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c7042371-102d-4860-a3f5-51043adbca81")
-		(property "Reference" "D3"
-			(at 169.29 80.01 0)
+		(uuid "0cdbd1af-919b-46f5-8ffb-781e8d08e3a8")
+		(property "Reference" "D4"
+			(at 145.16 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1198,7 +886,7 @@
 			)
 		)
 		(property "Value" "SS510C"
-			(at 169.29 82.55 0)
+			(at 145.16 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1208,7 +896,7 @@
 			)
 		)
 		(property "Footprint" "SS510C:SMC_L7.1-W6.2-LS8.1-RD"
-			(at 168.91 78.74 0)
+			(at 144.78 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1219,7 +907,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_SS510C_C123944.html"
-			(at 168.91 76.2 0)
+			(at 144.78 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1230,7 +918,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 168.91 86.36 0)
+			(at 144.78 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1241,7 +929,7 @@
 			)
 		)
 		(property "Manufacturer" "晶导微电子"
-			(at 168.91 73.66 0)
+			(at 144.78 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1252,7 +940,7 @@
 			)
 		)
 		(property "MPN" "SS510C"
-			(at 168.91 71.12 0)
+			(at 144.78 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1263,7 +951,7 @@
 			)
 		)
 		(property "LCSC Part" "C123944"
-			(at 168.91 68.58 0)
+			(at 144.78 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1274,35 +962,34 @@
 			)
 		)
 		(pin "2"
-			(uuid "715ad2a7-3735-4996-b051-0cbf3221c68c")
+			(uuid "3e1ef2aa-6c13-4efc-ba18-4614e641d2dc")
 		)
 		(pin "1"
-			(uuid "4f95239f-a967-4a6d-aeb9-61d52ef8162e")
+			(uuid "74f312bc-4e33-41df-825f-b0d3f377e2d8")
 		)
 		(instances
 			(project "MMS3_hat_templates"
-				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/f11c3b61-ae6a-4858-9d37-bbf426f44fb0"
-					(reference "D3")
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/99cf0a47-7576-4da2-b5b4-2714d9e150a8"
+					(reference "D4")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 157.48 105.41 0)
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 116.84 113.03 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "eebdd2e0-7c94-4a1e-9d2e-c9e02d368a57")
-		(property "Reference" "#PWR040"
-			(at 157.48 111.76 0)
-			(hide yes)
+		(uuid "476fe246-986d-4bd6-81d5-d785d97d9b9c")
+		(property "Reference" "J5"
+			(at 116.84 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1311,8 +998,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 157.48 110.49 0)
+		(property "Value" "AMASS XT60 Female"
+			(at 116.84 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1321,8 +1008,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 157.48 105.41 0)
+		(property "Footprint" "XT60:AMASS_XT60PW-F_1x02_P7.20mm_Horizontal"
+			(at 116.84 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1333,7 +1020,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.48 105.41 0)
+			(at 116.84 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1343,8 +1030,30 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 157.48 105.41 0)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 116.84 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C428722"
+			(at 116.84 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 116.84 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1355,12 +1064,351 @@
 			)
 		)
 		(pin "1"
-			(uuid "70941336-1671-42d0-ab21-f55549fab953")
+			(uuid "a403f218-a243-4de9-8335-a38beca65f2f")
+		)
+		(pin "2"
+			(uuid "91a46c79-edd8-4189-bc46-0a88da5ac027")
 		)
 		(instances
 			(project "MMS3_hat_templates"
-				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/f11c3b61-ae6a-4858-9d37-bbf426f44fb0"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/99cf0a47-7576-4da2-b5b4-2714d9e150a8"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 133.35 120.65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "644035eb-05ea-4feb-b1a2-df6e11eb74d3")
+		(property "Reference" "#PWR040"
+			(at 133.35 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 133.35 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 133.35 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b7a053a7-b635-4d65-98e1-4eea7fbd5e85")
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/99cf0a47-7576-4da2-b5b4-2714d9e150a8"
 					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 135.89 101.6 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7792c339-a3ec-4931-b0ba-ecb48c3dd26e")
+		(property "Reference" "#FLG03"
+			(at 135.89 103.505 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 135.89 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 135.89 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "52be4ecb-48c2-4f8f-84a8-4909bf0f5e08")
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/99cf0a47-7576-4da2-b5b4-2714d9e150a8"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 91.44 113.03 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b6471a3c-b654-49f0-a67c-e11263d6bb2d")
+		(property "Reference" "J4"
+			(at 91.44 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AMASS XT60 Male"
+			(at 91.44 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "XT60:AMASS_XT60PW-M_1x02_P7.20mm_Horizontal"
+			(at 91.44 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 91.44 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C98732"
+			(at 91.44 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 91.44 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "096dfd97-1b94-4492-8a3d-54d3f160e4fd")
+		)
+		(pin "2"
+			(uuid "d1252ce1-b9c3-4000-b0ba-d5790ddc9b1d")
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/99cf0a47-7576-4da2-b5b4-2714d9e150a8"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 152.4 101.6 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b7c0b5aa-2dc0-418a-a7d4-827cb140d17c")
+		(property "Reference" "#FLG02"
+			(at 152.4 103.505 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 152.4 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 152.4 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8e6ea89e-7326-4630-8413-7fbff0ae15be")
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/99cf0a47-7576-4da2-b5b4-2714d9e150a8"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
