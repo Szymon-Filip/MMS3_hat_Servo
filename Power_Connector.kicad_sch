@@ -5,7 +5,7 @@
 	(uuid "37e72a0e-97a9-42e4-9ff5-952c00b30024")
 	(paper "A4")
 	(title_block
-		(title "MMS3 Hat template small (Change Me)")
+		(title "MMS3 Hat servo controller")
 		(date "2026-02-25")
 		(rev "A")
 		(comment 1 "Made by Wojciech Szafrański")

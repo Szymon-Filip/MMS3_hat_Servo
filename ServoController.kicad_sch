@@ -4,6 +4,9 @@
 	(generator_version "10.0")
 	(uuid "fdde1eb0-63ed-4cd8-a528-ef3bb26cff3a")
 	(paper "A4")
+	(title_block
+		(title "MMS3 Hat servo controller")
+	)
 	(lib_symbols
 		(symbol "0402,10kΩ_1"
 			(pin_numbers
@@ -3563,6 +3566,10 @@
 		(uuid "fde57371-2bbc-43fa-a66d-c958f7a19499")
 	)
 	(no_connect
+		(at 43.18 73.66)
+		(uuid "0daff51d-e5be-4a40-b5a6-96b8ffdd389e")
+	)
+	(no_connect
 		(at 68.58 76.2)
 		(uuid "0e8feb3e-0bcf-4f13-b4dd-252f952b0561")
 	)
@@ -3581,6 +3588,10 @@
 	(no_connect
 		(at 68.58 81.28)
 		(uuid "64658b29-05f9-4cb2-b9b4-3dd46eb05462")
+	)
+	(no_connect
+		(at 43.18 71.12)
+		(uuid "d49b5c06-832d-45e9-9834-d00b572767ed")
 	)
 	(no_connect
 		(at 68.58 78.74)
@@ -3651,16 +3662,6 @@
 			(type default)
 		)
 		(uuid "0ab2bb0d-dbb5-42cb-bf0e-a20f7020c02a")
-	)
-	(wire
-		(pts
-			(xy 234.95 63.5) (xy 243.84 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c161241-7f9b-43da-918d-82ca0622591a")
 	)
 	(wire
 		(pts
@@ -3954,16 +3955,6 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 73.66) (xy 243.84 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59f7d185-ca8e-4c3d-9e39-fc6a0ced44c7")
-	)
-	(wire
-		(pts
 			(xy 190.5 50.8) (xy 199.39 50.8)
 		)
 		(stroke
@@ -4001,16 +3992,6 @@
 			(type default)
 		)
 		(uuid "66ae20d7-179e-4506-a7e2-0fb35a42b6fd")
-	)
-	(wire
-		(pts
-			(xy 234.95 71.12) (xy 243.84 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67b65d78-9e71-41e4-909e-ddaf5dbb7823")
 	)
 	(wire
 		(pts
@@ -4254,16 +4235,6 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 76.2) (xy 243.84 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5b9a411-9400-4ac4-951d-323bef5c07b6")
-	)
-	(wire
-		(pts
 			(xy 213.36 134.62) (xy 213.36 146.05)
 		)
 		(stroke
@@ -4314,16 +4285,6 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 73.66) (xy 43.18 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3e33288-7df4-4f55-862f-769a6134ba05")
-	)
-	(wire
-		(pts
 			(xy 111.76 128.27) (xy 104.14 128.27)
 		)
 		(stroke
@@ -4331,16 +4292,6 @@
 			(type default)
 		)
 		(uuid "b54afe0b-4e08-42ed-9532-daabf4773f85")
-	)
-	(wire
-		(pts
-			(xy 238.76 60.96) (xy 243.84 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b84dc164-2f05-40dd-8300-2e118b875fbd")
 	)
 	(wire
 		(pts
@@ -4514,16 +4465,6 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 71.12) (xy 43.18 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e193840a-a368-4abc-85f4-b10384ca5715")
-	)
-	(wire
-		(pts
 			(xy 190.5 58.42) (xy 199.39 58.42)
 		)
 		(stroke
@@ -4614,16 +4555,6 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 58.42) (xy 243.84 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fbc936b2-8643-4aff-b45e-04db7c8939e3")
-	)
-	(wire
-		(pts
 			(xy 127 128.27) (xy 119.38 128.27)
 		)
 		(stroke
@@ -4651,16 +4582,6 @@
 			(type default)
 		)
 		(uuid "fef92b7f-3518-4c4d-ae2b-c91ecc6744e1")
-	)
-	(label "S5"
-		(at 238.76 60.96 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "14d045c4-fd54-4c32-ad68-17f45db1b272")
 	)
 	(label "S3"
 		(at 194.31 73.66 180)
@@ -4802,16 +4723,6 @@
 		)
 		(uuid "6b2d7d71-b226-4ea6-8779-7423d0f80a75")
 	)
-	(label "S6"
-		(at 238.76 73.66 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6b49f253-18c6-484d-b954-34030590373d")
-	)
 	(label "A0"
 		(at 39.37 48.26 0)
 		(effects
@@ -4912,16 +4823,6 @@
 		)
 		(uuid "a7319076-b59f-489e-b760-1c5d42135710")
 	)
-	(label "S5"
-		(at 39.37 71.12 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bc9364ed-06ae-46a3-b9ab-3d518bbc266c")
-	)
 	(label "S16"
 		(at 72.39 63.5 0)
 		(effects
@@ -4961,16 +4862,6 @@
 			(justify right bottom)
 		)
 		(uuid "d7b51c2c-b0d1-4901-bb98-fe5d1816ea69")
-	)
-	(label "S6"
-		(at 39.37 73.66 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d89a899a-4428-42f6-9dae-25301c6d5d9a")
 	)
 	(label "S1"
 		(at 194.31 48.26 180)
@@ -5027,17 +4918,6 @@
 	)
 	(hierarchical_label "Servo_VCC"
 		(shape input)
-		(at 234.95 63.5 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6839e4c7-63e1-449c-bff8-f25874a3d88b")
-	)
-	(hierarchical_label "Servo_VCC"
-		(shape input)
 		(at 234.95 50.8 180)
 		(effects
 			(font
@@ -5057,17 +4937,6 @@
 			(justify right)
 		)
 		(uuid "a2d65291-8d70-4af1-aa17-5461a946a2b2")
-	)
-	(hierarchical_label "Servo_VCC"
-		(shape input)
-		(at 234.95 76.2 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e52bd337-5b7e-4a02-b305-b8cda172b8d7")
 	)
 	(hierarchical_label "Servo_VCC"
 		(shape input)
@@ -6215,91 +6084,6 @@
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/e548e2bd-91b7-4192-abed-9a3697e5c1b6"
 					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 248.92 73.66 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "20822ed2-2460-4491-ae54-7565da867279")
-		(property "Reference" "J11"
-			(at 251.46 72.3899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x03"
-			(at 251.46 74.9299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_S3B-XH-A_1x03_P2.50mm_Horizontal"
-			(at 248.92 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 248.92 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 248.92 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "525c6d17-6ca7-4fd2-b500-e29ff39d6bd4")
-		)
-		(pin "1"
-			(uuid "635d87fd-5373-4412-b870-3ac316874054")
-		)
-		(pin "2"
-			(uuid "d7d1e5fc-aa64-440e-89a1-ae6566c9f3a2")
-		)
-		(instances
-			(project "MMS3_hat_templates"
-				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/e548e2bd-91b7-4192-abed-9a3697e5c1b6"
-					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -7891,85 +7675,6 @@
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/e548e2bd-91b7-4192-abed-9a3697e5c1b6"
 					(reference "R29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 234.95 58.42 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3dff740c-7912-4040-8843-92a246552710")
-		(property "Reference" "#PWR065"
-			(at 228.6 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 231.14 58.4199 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 234.95 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 234.95 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 234.95 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "325c49e3-d0e2-4db7-9169-330ba6759481")
-		)
-		(instances
-			(project "MMS3_hat_templates"
-				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/e548e2bd-91b7-4192-abed-9a3697e5c1b6"
-					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -11570,91 +11275,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 248.92 60.96 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9fe44ee9-7f05-45b4-9863-dd2c2ed96e3d")
-		(property "Reference" "J6"
-			(at 251.46 59.6899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x03"
-			(at 251.46 62.2299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_S3B-XH-A_1x03_P2.50mm_Horizontal"
-			(at 248.92 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 248.92 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 248.92 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "7e236b7b-2d16-468b-b060-dbf752339241")
-		)
-		(pin "1"
-			(uuid "2c6bb693-09de-4b67-b8db-d99c5b5ff2a5")
-		)
-		(pin "2"
-			(uuid "ffdc4039-0ab9-4239-94d8-0e0e4acf69fe")
-		)
-		(instances
-			(project "MMS3_hat_templates"
-				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/e548e2bd-91b7-4192-abed-9a3697e5c1b6"
-					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 241.3 119.38 0)
 		(unit 1)
@@ -11727,85 +11347,6 @@
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/e548e2bd-91b7-4192-abed-9a3697e5c1b6"
 					(reference "#PWR079")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 234.95 71.12 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a651537d-8950-4a00-9899-edd98e17c551")
-		(property "Reference" "#PWR070"
-			(at 228.6 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 231.14 71.1199 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 234.95 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 234.95 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 234.95 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4f21ce41-2251-4b44-9f5d-2689665035f7")
-		)
-		(instances
-			(project "MMS3_hat_templates"
-				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/e548e2bd-91b7-4192-abed-9a3697e5c1b6"
-					(reference "#PWR070")
 					(unit 1)
 				)
 			)

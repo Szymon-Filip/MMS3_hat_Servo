@@ -487,7 +487,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "MMS3_hat_templates.kicad_pro",
+    "filename": "MMS3_hat_servo.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -1064,12 +1064,12 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "MMS3_hat_templates.kicad_sch",
-        "name": "MMS3_hat_templates",
+        "filename": "MMS3_hat_servo.kicad_sch",
+        "name": "MMS3_hat_servo",
         "uuid": "6596548a-44e0-46d8-8624-fd71cf4a3e17"
       }
     ],
-    "used_designators": "R12,R22,#FLG1,#PWR71-81,C16,C18,U4,Q1-2",
+    "used_designators": "Q1",
     "variants": []
   },
   "sheets": [

@@ -5,7 +5,7 @@
 	(uuid "6596548a-44e0-46d8-8624-fd71cf4a3e17")
 	(paper "A4")
 	(title_block
-		(title "MMS3 Hat template small (Change Me)")
+		(title "MMS3 Hat servo controller")
 		(date "2026-02-12")
 		(rev "A")
 		(company "MiniModucard System")
