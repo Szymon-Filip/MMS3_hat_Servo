@@ -60,7 +60,28 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|120500000|128055000|a68f203f-b576-47b9-af67-2aa8b6d7ee21|2e546e0c-ab85-4ef1-8d20-953853aba209",
+          ""
+        ],
+        [
+          "clearance|126238000|132280000|b28914bf-f299-4cf1-8e3d-e3c6bd40bae3|f6c03856-2994-4808-a966-331ac81f0b52",
+          ""
+        ],
+        [
+          "clearance|141808667|132280000|4e3dc089-71a5-435f-bd8b-a55cf14ace3c|95e45504-ed0a-43a1-94de-1acd9370a43d",
+          ""
+        ],
+        [
+          "clearance|152379333|132280000|61d25437-b25c-4fc9-b48f-16ef85dd7a9d|d0727e01-6766-4042-8162-c3f93b9c67d6",
+          ""
+        ],
+        [
+          "clearance|165450000|132280000|5da451a0-9ccb-439c-b0e2-8f5ad7a13323|da3a97e8-aa3c-4723-a052-f78c483df1ef",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -130,22 +151,22 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.15,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_copper_edge_clearance": 0.2,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
-        "min_microvia_diameter": 0.2,
-        "min_microvia_drill": 0.1,
+        "min_hole_clearance": 0.2,
+        "min_hole_to_hole": 0.2,
+        "min_microvia_diameter": 0.15,
+        "min_microvia_drill": 0.2,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
+        "min_through_hole_diameter": 0.15,
+        "min_track_width": 0.15,
         "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_via_diameter": 0.25,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -194,7 +215,9 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        1.0,
+        2.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -226,6 +249,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.2
         }
       ],
       "zones_allow_external_fillets": false
@@ -512,6 +539,14 @@
         "wire_width": 6
       },
       {
+        "clearance": 1.0,
+        "name": "50V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
         "bus_width": 12,
         "clearance": 0.15,
         "diff_pair_gap": 0.2,
@@ -521,7 +556,7 @@
         "microvia_drill": 0.1,
         "name": "CAN_120_DIFF",
         "pcb_color": "rgb(255, 81, 215)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.12,
         "tuning_profile": "",
@@ -539,7 +574,7 @@
         "microvia_drill": 0.1,
         "name": "PWR",
         "pcb_color": "rgb(255, 0, 0)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgb(255, 0, 0)",
         "track_width": 0.3,
         "tuning_profile": "",
@@ -557,7 +592,7 @@
         "microvia_drill": 0.1,
         "name": "QSPI_50S_SE",
         "pcb_color": "rgb(55, 255, 75)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.18,
         "tuning_profile": "",
@@ -575,7 +610,7 @@
         "microvia_drill": 0.1,
         "name": "USB_90_DIFF",
         "pcb_color": "rgb(38, 8, 255)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.15,
         "tuning_profile": "",
@@ -590,10 +625,10 @@
     "net_colors": null,
     "netclass_assignments": {
       "/Power Connector/VIN_BRD": [
-        "50V "
+        "50V"
       ],
       "BRD_VIN": [
-        "50V "
+        "50V"
       ]
     },
     "netclass_patterns": [
@@ -1069,13 +1104,13 @@
         "uuid": "6596548a-44e0-46d8-8624-fd71cf4a3e17"
       }
     ],
-    "used_designators": "Q1",
+    "used_designators": "Q1,D1",
     "variants": []
   },
   "sheets": [
     [
       "6596548a-44e0-46d8-8624-fd71cf4a3e17",
-      "MMS3_hat_templates"
+      "MMS3_hat_servo"
     ],
     [
       "fdb595ff-e94b-4e80-8fe7-e7d367588ab2",
