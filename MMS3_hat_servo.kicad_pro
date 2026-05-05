@@ -70,7 +70,7 @@
           ""
         ],
         [
-          "clearance|141808667|132280000|4e3dc089-71a5-435f-bd8b-a55cf14ace3c|95e45504-ed0a-43a1-94de-1acd9370a43d",
+          "clearance|139308667|132280000|95e45504-ed0a-43a1-94de-1acd9370a43d|4e3dc089-71a5-435f-bd8b-a55cf14ace3c",
           ""
         ],
         [
@@ -1104,7 +1104,7 @@
         "uuid": "6596548a-44e0-46d8-8624-fd71cf4a3e17"
       }
     ],
-    "used_designators": "Q1,D1",
+    "used_designators": "Q1,Q3-5,D1",
     "variants": []
   },
   "sheets": [
